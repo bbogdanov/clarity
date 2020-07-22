@@ -3,13 +3,11 @@ title: Overview
 toc: true
 ---
 
-# Toggle switch
-
-Toggle switches allow the selection of on _on_ or _off_ state.
+Toggle switches allow the selection of on `on` or `off` state.
 
 ## Usage
 
-Use a toggle switch when there is need to select a single options. E.g - “on” and “off.”
+Use a toggle switch when there is need to select a single options. E.g - `on` and `off`.
 Toggle switches take up less space than an “on/off” radio button group and communicate their intended purpose better than a checkbox that toggles functionality.
 
 ## Anatomy
@@ -52,7 +50,7 @@ A toggle switch can be disabled by putting the disabled attribute on the checkbo
 
 For applications using the ClrToggle directive and the associated ClrToggleContainer and ClrToggleWrapper components there is built in support adding accessible behavior to the control and its form.
 
-### Included Behavior:
+### Included Behavior
 
 1. Programmatically associating the correct label for attribute with the id of the input
 1. Automatic wiring up of the aria-describedby behavior with associated clr-control-error elements

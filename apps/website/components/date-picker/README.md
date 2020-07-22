@@ -10,7 +10,7 @@ Date Picker is a popover control for picking a date value for a date input. It's
 <ClrRow>
 <ClrCol>
 <p>Use a Date Picker to select a date when a user needs to understand the date in context with other possible dates. Date choices are influenced by day of the week, or week within a month. It is paired with a text input so that it can send a formatted date value to the input. A Date Picker is also helpful when the formatting of the date is important.</p>
-<p>Date Pickers aren’t helpful when the date is a known value like a birthdate. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.</p>
+<p>Date Pickers aren’t helpful when the date is a known value like a birthday. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.</p>
 </ClrCol>
 <ClrCol>
 <DocInset class="custom-block">
@@ -102,7 +102,7 @@ The earliest and latest acceptable dates can also be set. Just like the native H
 
 Only dates inside the min/max range will be selectable for the input when there is a bound placed for the min or max attribute.
 
-The `min` and the `max` attributes can be used alone or together to have both an upper and a lower bound on acceppted dates.
+The `min` and the `max` attributes can be used alone or together to have both an upper and a lower bound on accepted dates.
 
 ![Basic Datepicker](/images/components/datepicker/min-max-demo.png)
 <doc-demo src="/demos/datepicker/min-max-ng.html" />
@@ -254,7 +254,7 @@ Reactive Forms use FormControls to create the binding between the model and the 
 
 ##### Example Output
 
-The date value will be null until a user selectes a date.
+The date value will be null until a user selects a date.
 
 ```javascript
 {

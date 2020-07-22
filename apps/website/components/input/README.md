@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 Inputs enable the user to input text information.
@@ -112,7 +113,7 @@ Note: the validation only displays an error after the user has left focus on an 
 
 For applications that use the `ClrInput` directive and the associated `ClrInputContainer` component there is built in support that adds accessible behavior to the control and its form. This behavior includes:
 
-1.  Programmatically associating the correct label `for` attribute with the `id` of the input
-2.  Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
-3.  An `aria-live` region that can notify screen readers about changes in the control error state
-4.  Adds the label to a general form summary for screen readers when the control is in an error state after a form submit
+1. Programmatically associating the correct label `for` attribute with the `id` of the input
+2. Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
+3. An `aria-live` region that can notify screen readers about changes in the control error state
+4. Adds the label to a general form summary for screen readers when the control is in an error state after a form submit

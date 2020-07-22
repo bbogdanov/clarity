@@ -51,7 +51,7 @@ Forms should help users complete their goal as quickly as possible. Column struc
 
 ::: dont Create multiple columns of input fields per page, except for small, related inputs like name "first" and "last".
 
-![don't put forms into multiple columns column](./_images/architecture-dont.svg)
+![Don't put forms into multiple columns column](./_images/architecture-dont.svg)
 
 :::
 
@@ -213,7 +213,7 @@ For screen reader accessibility, forms with validation messages should provide a
 </form>
 ```
 
-This pattern is more accessible and clear by writing the word "error" explicitly for users (and screenreaders) to read, with research to back this up compared with the use of a red required asterisk (\*). See [this article from fusionbox](https://www.fusionbox.com/blog/detail/rethinking-the-red-required-asterisk-for-better-form-ux/599/) provides some evidence for this rationale.
+This pattern is more accessible and clear by writing the word "error" explicitly for users (and screen readers) to read, with research to back this up compared with the use of a red required asterisk (\*). See [this article from fusionbox](https://www.fusionbox.com/blog/detail/rethinking-the-red-required-asterisk-for-better-form-ux/599/) provides some evidence for this rationale.
 
 #### Multiple error messages
 

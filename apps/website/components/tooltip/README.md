@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Tooltip
-
 A tooltip is a momentary dialogue which surfaces from an info icon and provides additional information pertaining to the corresponding UI element.
 
 ## Usage

@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Timeline
-
 A timeline displays a series of events which can guide the user through processes or pre-defined steps while also showing current progress.
 
 ## Usage

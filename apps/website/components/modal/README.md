@@ -5,11 +5,11 @@ toc: true
 
 Modals are dialogues which provide information or help a user complete a task. They require the user to take an action to dismiss them.
 
-<DocVideo src="/demos/modal/videos/modal-basic.mov" :width="736"  :autoplay="true" bgColor="#353335"></DocVideo>
-
 ## Usage
 
 Use a modal for self-contained processes with a clear start and end point. For the limited time frame of this action, a modal takes the user out of the current user workflow. Instead, it lets the user focus on the action and then return to the original context.
+
+<DocVideo src="/demos/modal/videos/modal-basic.mov" :width="736"  :autoplay="true" bgColor="#353335"></DocVideo>
 
 <div class="top-margin-wrapper">
   <cds-alert-group status="warning">
@@ -19,7 +19,7 @@ Use a modal for self-contained processes with a clear start and end point. For t
 
 **Use a modal:**
 
-- When you need to grab user’s attetnion for important message
+- When you need to grab user’s attention for important message
 - When you want to show additional information without losing the context of the parent page.
 - To break down a complex workflow into simpler step
 

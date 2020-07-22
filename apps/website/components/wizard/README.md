@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Wizard
-
 A wizard provides an interface for a user to proceed through a sequence of steps required to complete a task.
 
 ## Usage

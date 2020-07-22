@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 Button groups are for creating collections of similar type action buttons.
@@ -10,7 +11,7 @@ Button groups follow normal Button design guidelines. All Button options regardi
 
 Button groups can be also used as alternatives for checkboxes and radio buttons.
 
-### Button Groups as Checkboxs
+### Button Groups as Checkboxes
 
 Use when a small list of options can be selected from, similar to the Checkbox component
 
@@ -359,3 +360,53 @@ Use when you want similar actions to be grouped together and separated from othe
 :::
 
 <!-- ## Placement -->
+
+## Code & Examples
+
+### Menu overflow
+
+Use the clrInMenu input to determine if a button belongs in the overflow menu or not.
+
+#### Default position
+
+```html
+<clr-button-group class="btn-primary">
+  <clr-button>Create</clr-button>
+  <clr-button>Favorite</clr-button>
+  <clr-button [clrInMenu]="true">Assign</clr-button>
+  <clr-button [clrInMenu]="true">Download</clr-button>
+  <clr-button [clrInMenu]="true">Delete</clr-button>
+</clr-button-group>
+```
+
+### Menu Position
+
+```html
+<clr-button-group class="btn-primary" [clrMenuPosition]="'bottom-right'">
+  <clr-button>Create</clr-button>
+  <clr-button>Favorite</clr-button>
+  <clr-button [clrInMenu]="true">Assign</clr-button>
+  <clr-button [clrInMenu]="true">Download</clr-button>
+  <clr-button [clrInMenu]="true">Delete</clr-button>
+</clr-button-group>
+```
+
+## Accessibility
+
+If your icon button has no text, we recommend adding the **title="" attribute** to your icon buttons. This adds some
+additional context for users unfamiliar with what action your icon button might produce. The text should reflect the
+action.
+
+```html
+<div class="btn-group btn-primary btn-icon">
+  <button class="btn">
+    <clr-icon shape="check" title="Check"></clr-icon>
+  </button>
+  <button class="btn">
+    <clr-icon shape="home" title="home"></clr-icon>
+  </button>
+  <button class="btn">
+    <clr-icon shape="user" title="user"></clr-icon>
+  </button>
+</div>
+```

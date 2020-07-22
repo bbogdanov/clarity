@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 Using radio buttons, users can select one option from a group of options.
@@ -64,7 +65,7 @@ Use radio buttons when you want users to see all available options and the list 
 
 For applications that use the `ClrRadio` directive and the associated `ClrRadioContainer` and `ClrRadioWrapper` components there is built in support that adds accessible behavior to the control and its form. This behavior includes:
 
-1.  Programmatically associating the correct label `for` attribute with the `id` of the input
-2.  Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
-3.  An `aria-live` region that can notify screen readers about changes in the control error state
-4.  Adds the label to a general form summary for screen readers when the control is in an error state after a form submit
+1. Programmatically associating the correct label `for` attribute with the `id` of the input
+2. Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
+3. An `aria-live` region that can notify screen readers about changes in the control error state
+4. Adds the label to a general form summary for screen readers when the control is in an error state after a form submit

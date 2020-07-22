@@ -174,7 +174,7 @@ Clarity Angular component follows these guidelines:
 
 This class is a wrapper class around the `.dropdown-toggle` and th `.dropdown-menu`
 
-#### .dropdown-toggle:
+#### .dropdown-toggle
 
 Extend this class on a button, icon or text link clicking on which the dropdown menu will be activated
 

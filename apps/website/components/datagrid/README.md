@@ -10,7 +10,7 @@ A datagrid is a presentation of data in a table which enables the user to perfor
 Datagrids are for organizing large volumes of data that users can scan, compare, and perform actions on.
 
 - Do not use a datagrid when you need to present static data - this is what tables are for.
-- Do not use a datagrid when you require hierarchy within the data - tree tables a.k.a hierarchical datagrids are not supported by Clarity because of usability and accessibility issues .
+- Do not use a datagrid when you require hierarchy within the data - tree tables a.k.a hierarchical datagrids are not supported by Clarity because of usability and accessibility issues.
 
 ## Content
 
@@ -472,7 +472,7 @@ You can use a preset filter with either of the built-in filters to initialize th
 
 The Clarity datagrid supports pagination because the point of a datagrid is to display large amounts of data, and it often can't be displayed all at the same time on the page.
 
-To activate pagination on your datagrid, you simply need to add a `<clr-dg-pagination>` component in your datagrid's footer. This component exposes many of properties, most of them bindable, to help you interact with it. You can optionally include a clr-dg-page-size component to bind a list of options to display for toggling the number of items per page.
+To activate pagination on your datagrid, you simply need to add a `<clr-dg-pagination>` component in your datagrid's footer. This component exposes many of properties, most of them are bindable, to help you interact with it. You can optionally include a clr-dg-page-size component to bind a list of options to display for toggling the number of items per page.
 
 Here is an example of how to use pagination, and attach a template reference variable to it to display information on the current page.
 
@@ -559,7 +559,7 @@ Mark a row with `clrDgSelectable`, this way the state of the row could not be ch
 
 #### Preserving Selection
 
-By default, when a filter is applied to the datagrid the selection is cleared. This is done to ensure that all selected items are always visible in the datagrid. In certain instances, this might not be desireable, therefore we provide the `[clrDgPreserveSelection]` input. Setting this to true will retain the current selection on the datagrid, even if filters are applied and selected items are not visible.
+By default, when a filter is applied to the datagrid the selection is cleared. This is done to ensure that all selected items are always visible in the datagrid. In certain instances, this might not be desirable, therefore we provide the `[clrDgPreserveSelection]` input. Setting this to true will retain the current selection on the datagrid, even if filters are applied and selected items are not visible.
 
 Note: If you do enable `[clrDgPreserveSelection]`, before performing any action on the selected items, a confirmation should be shown to ensure the end-user is aware of which items they are operating on, since the filters may hide some of the selected items from the user causing a discovery issue.
 
@@ -875,9 +875,9 @@ It is possible to listen for changes to the Detail Pane state, by desugaring the
 
 </DocDemo>
 
-#### Controlling the Detail Pane programatically
+#### Controlling the Detail Pane programmatically
 
-In some cases, you might want to programatically control the toggling of the Detail Pane, which you can do by desugaring `*clrIfDetail` directive and using the two way binding syntax. Be sure to include the local template variable like `let-detail` to get access to the row object.
+In some cases, you might want to programmatically control the toggling of the Detail Pane, which you can do by desugaring `*clrIfDetail` directive and using the two way binding syntax. Be sure to include the local template variable like `let-detail` to get access to the row object.
 
 <DocDemo>
 
@@ -1041,3 +1041,41 @@ To increase the information density of your Datagrid or to decrease the amount o
 
 [//]: #Placement
 [//]: #Content
+
+## Code and Examples
+
+The ClrDatagrid component leverages a pure declarative API. Write the HTML like any other component and declare the
+features needed for the implementation. For large amounts of data or heavy processing, use the `*ngFor` iterator and
+request only the parts of the data from the server.
+`*ngFor` iterator if it is a server driven
+datagrid or
+
+#### Examples
+
+#### Basic w/ Smart iterator
+
+A basic datagrid will have columns, rows, cells and a footer with a description.
+For the smart iterator, when the app will receive all data during page initialization, make sure it includes the
+`*clrDgItems` iterator.
+
+```
+<<< ../angular/src/stories/datagrid/basic.html
+```
+
+#### TODO: Determine and create all examples
+
+## Accessibility
+
+All of the WCAG guidelines apply for the Datagrid (When is a good time to rename this to data-table and deprecate the
+datagrid name? I've wanted to do this for a long time b/c it is a bit misleading and not standard)
+) component
+. The Datagrid
+component implements the following accessibility requirements internally for itself.
+
+Applications are responsible for implementing these features for themselves:
+
+## General guidelines
+
+The following general guidelines apply to the design and development of the Datagrid.
+
+- TBD

@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Vertical Nav
-
 A vertically-aligned list of the destinations in an application.
 
 ## Usage

@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Badges
-
 Badges are status modifiers to other elements which display the numerical value within an element either next to it or inside the element itself.
 
 ## Usage

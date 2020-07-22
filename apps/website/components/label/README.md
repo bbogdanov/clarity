@@ -3,17 +3,11 @@ title: Overview
 toc: true
 ---
 
-# Labels
-
 Labels show concise metadata in a compact format.
-
-[//]: # 'DEMO - John and James'
-
-<doc-demo src="/demos/label/demo1-ng.html" demo="/demos/label/demo1-css.html" toggle="false" />
 
 ## Usage
 
-Use a label to show the metadata when the space is limited or when you want to catch user’s attention. It is commonly used for tags, or fiter items.
+Use a label to show the metadata when the space is limited or when you want to catch user’s attention. It is commonly used for tags, or fitter items.
 The distinctive visual style of labels deliberately deviates from buttons. This prevents users from confusing labels with buttons and allows labels to co-exist with other components without competing for a user's attention with primary and secondary buttons on the screen.
 
 <doc-demo src="/demos/label/food-ng.html" demo="/demos/label/food-css.html" />
@@ -65,12 +59,12 @@ Differentiate labels from buttons.
 </DocInset>
 :::
 
-::: dont Use use all capitialization or multi-lines
+::: dont Use use all capitalization or multi-lines
 <DocInset height="100">
 
 <div>
 <span class="label label-purple">LONDON (LOCATION)</span>
-<span style="padding: 15px; text-align: center" class="label label-purple">LONDON <br>(LOCATION)</span>
+<span style="padding: 15px; text-align: center" class="label label-purple">LONDON <br/>(LOCATION)</span>
 </div>
 
 </DocInset>

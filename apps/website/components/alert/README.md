@@ -16,16 +16,16 @@ There are two types of alerts, standard alerts and app level alerts.
 <ClrRow>
 <ClrCol>
 <DocInset>
-<ClrImage alt="Standard Alerts" src="/images/components/alert/standard-alert.png" />
+   <ClrImage alt="Standard Alerts" src="/images/components/alert/standard-alert.png" />
 </DocInset>
 <h3>Standard alerts</h3>
 <p>Standard alerts are used in the context of an application either in the content area itself or within components.</p>
 <p>There are four different sub-types of standard alerts: error, warning, info, and success.</p>
-<p>Ordered standard alerts by the urgency in which the user needs to pay attention to: error, warning, info, then success. In the case there are multiple of each sub-type, all of them are shown before another sub-type is reached. For example, multiple errors are shown before the first warning is.</p>
+<p>Ordered standard alerts by the urgency in which the user needs to pay attention to: error, warning, info, then success. In the case there are multiple of each sub-type all of them are shown before another sub-type is reached. For example, multiple errors are shown before the first warning is.</p>
 </ClrCol>
 <ClrCol>
 <DocInset>
-<ClrImage title="App Alerts" src="/images/components/alert/app-alert.png" />
+   <ClrImage title="App Alerts" src="/images/components/alert/app-alert.png" />
 </DocInset>
 <h3>App-Level Alerts</h3>
 <p>App-level alerts are used in the global context of an application. They are placed at the very top of all content and navigation.</p>
@@ -147,7 +147,7 @@ Depending on the sub-type of a standard alert, make sure to communicate a clear,
 ## Accessibility
 
 <cds-alert-group status="warning" type="default">
-<cds-alert>Actionable controls inside dynamically generated alerts are not accessible to screen reader users! For this reason Clarity does not recommend using dropdowns, buttons, links inside alerts that appear as dynamic notifications.</cds-alert>
+   <cds-alert>Actionable controls inside dynamically generated alerts are not accessible to screen reader users! For this reason Clarity does not recommend using dropdowns, buttons, links inside alerts that appear as dynamic notifications.</cds-alert>
 </cds-alert-group>
 
 Accessibility problems related to using actionable controls inside dynamically generated alerts:
@@ -156,12 +156,18 @@ Accessibility problems related to using actionable controls inside dynamically g
   TODO Fix core components (maybe it cannot be used in the markdown rendering)
 - There is no way for the user to directly interact with the announced action controls.
 
-It is acceptable to use actions in static alerts. The following guidlines are recommended:
+It is acceptable to use actions in static alerts. The following guidelines are recommended:
 
 - Controls can be dropdown, button or link elements.
 - Buttons should be used for actions, links for navigation.
 - The text for these controls should be as descriptive as possible.
-  <cds-alert-group type="default" status="warning"><cds-alert closable>Acknowledge<cds-alert-actions><cds-button>Action Link</cds-button></cds-alert-actions></cds-alert></cds-alert-group>
+  <cds-alert-group type="default" status="warning">
+  <cds-alert closable>Acknowledge
+  <cds-alert-actions>
+  <cds-button>Action Link</cds-button>
+  </cds-alert-actions>
+  </cds-alert>
+  </cds-alert-group>
 
 ## Code & Examples
 

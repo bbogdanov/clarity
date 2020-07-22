@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Combobox
-
 A combobox is a complex element, which can be considered as a combination of two elements - a dropdown list and a text input. The text input is used for quick search and filtering of the predefined options from the dropdown list.
 
 ## Usage
@@ -65,7 +63,7 @@ The multi select combobox is similar to the single select one, as it is data dri
 <ClrRow>
 <ClrCol>
 <p>
-The asynchronous scenario allows for lazy loading of the preselected options. There is a "loading" spinner and message that's displayed before the options load is complete.
+The asynchronous scenario allows for lazy loading of the pre-selected options. There is a "loading" spinner and message that's displayed before the options load is complete.
 </p>
 </ClrCol>
 <ClrCol>
@@ -97,7 +95,7 @@ It has helper text and error/success message area. The component itself has a te
 
 #### Single selection combobox
 
-The current selection is prefilled in the text input box. Changing the input text does not change the selection until an option is selected from the drop down list. Selection can only be changed, not deleted.
+The current selection is pre-filled in the text input box. Changing the input text does not change the selection until an option is selected from the drop down list. Selection can only be changed, not deleted.
 
 #### Multi selection combobox
 
@@ -105,7 +103,7 @@ Current selection is displayed as a list of pills before the input box. New pill
 
 ### Opening the drop down
 
-The drop down with the preselcted options can be opened either by clicking on the down carret icon at the end of the input text box, or by typing into the text box.
+The drop down with the pre-selected options can be opened either by clicking on the down caret icon at the end of the input text box, or by typing into the text box.
 
 ### Interacting with the options
 
@@ -123,7 +121,7 @@ Typing in the input text box will filter the drop down list of predefined option
 <ClrRow>
 <ClrCol>
 <p>
-A basic static combobox can be created by directly nesting <code>clr-option</code> components in the <code>clr-opitons</code> container.
+A basic static combobox can be created by directly nesting <code>clr-option</code> components in the <code>clr-options</code> container.
 </p>
 </ClrCol>
 <ClrCol>
@@ -139,7 +137,7 @@ A basic static combobox can be created by directly nesting <code>clr-option</cod
 <ClrRow>
 <ClrCol>
 <p>
-A single selection combobox is taking advantage of the <code>*clrOptionItems</code> smart iterator to manage its inventory of preselection options. It is similar to <code>*NgFor</code> as syntax. <code>field:'name'</code> designates which field of the underlying data object should be used as display name. The html nested inside the <code>clr-option</code> node will be used as template for the option design. It can include images, text, html code.
+A single selection combobox is taking advantage of the <code>*clrOptionItems</code> smart iterator to manage its inventory of pre-selected options. It is similar to <code>*NgFor</code> as syntax. <code>field:'name'</code> designates which field of the underlying data object should be used as display name. The html nested inside the <code>clr-option</code> node will be used as template for the option design. It can include images, text, html code.
 </p>
 </ClrCol>
 <ClrCol>

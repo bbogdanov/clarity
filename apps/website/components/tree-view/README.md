@@ -3,9 +3,7 @@ title: Overview
 toc: true
 ---
 
-# Tree view
-
-A tree is a hierarchical component that gives users access to a hierarchical set of objects dispalyed in a the parent-child relationship.
+A tree is a hierarchical component that gives users access to a hierarchical set of objects displayed in a the parent-child relationship.
 
 ## Usage
 
@@ -211,7 +209,7 @@ Use the `.clr-treenode-link` class to style content inside of a Tree Node as cli
 
 ### Generating a tree dynamically
 
-When the tree strucutre is large and complex you can use iteration to generate nodes and child nodes based on the structure given to the [ClrTree](/components/tree-view/api.html#clrtree).
+When the tree structure is large and complex you can use iteration to generate nodes and child nodes based on the structure given to the [ClrTree](/components/tree-view/api.html#clrtree).
 
 ![Dynamically Generated Tree](/images/components/tree-view/dynamic-tree.png)
 

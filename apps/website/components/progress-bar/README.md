@@ -3,15 +3,13 @@ title: Overview
 toc: true
 ---
 
-# Progress Bar
-
 A progress bar is a linear indicator for providing feedback about an ongoing, user-initiated process.
-
-[//] # (DEMO - progress example)
 
 ## Usage
 
 Use a progress bar to set expectation of the loading time. Users are more willing to tolerate a long wait time if they see the actual progress. It gives users control to decide whether to wait or not. It may also reduce the perceived wait time.
+
+[//] # (DEMO - progress example)
 
 <ClrRow>
 <div class="clr-col-12 clr-col-md-6">
@@ -74,8 +72,8 @@ When there is no estimate for the completion time or goal of a process, show ind
 
 - Will animate continuously until complete
 - Uses specific messaging: E.g "Loading update 3 of 7"
-- Has no estmated end time
-- Indicates work is occuring
+- Has no estimated end time
+- Indicates work is occurring
 
 <doc-demo src="/demos/progress/indeterminate-ng.html" demo="/demos/progress/indeterminate-css.html" toggle="false" />
 

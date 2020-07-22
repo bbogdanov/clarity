@@ -30,13 +30,13 @@ Use sentence-style capitalization for both the label and the menu items.
 
 If you are using Angular, the recommended approach is to always use the `ClrSelect` directive on your selects to help manage the form control. By using `ClrSelect`, you'll automatically be able to leverage built in validation, helper text, and layout features in forms.
 
-#### Basic select
+### Basic select
 
 This is the standard way to define a select box inside of a form, without the use of a label or validation. You need to add `clrSelect` to your select to wire up the directive.
 
 <doc-demo src="/demos/select/basic-ng.html" demo="/demos/select/basic-css.html" toggle="false" />
 
-#### Labels
+### Labels
 
 For anything beyond a standalone select control, you'll need to wrap your select with the `ClrSelectContainer` component. This is required to contain all of the logic and validation details for the individual select control.
 
@@ -44,7 +44,7 @@ Then you can add a `label` element and it will automatically get laid out correc
 
 <doc-demo src="/demos/select/label-ng.html" demo="/demos/select/label-css.html" toggle="false" />
 
-#### Helper and error messages
+### Helper and error messages
 
 The select form control wires up with the validations placed on an select, such as `required` or even custom built validators in Angular. Under the hood, it looks at the `NgControl` values to determine the control validity, and display the helper text or error message accordingly.
 
@@ -56,7 +56,7 @@ Note: the validation in this example only displays an error after you focus and 
 
 For applications that use the `ClrSelect` directive and the associated `ClrSelectContainer` component there is built in support that adds accessible behavior to the control and its form. This behavior includes:
 
-1.  Programmatically associating the correct label `for` attribute with the `id` of the input
-2.  Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
-3.  An `aria-live` region that can notify screen readers about changes in the control error state
-4.  Adds the label to a general form summary for screen readers when the control is in an error state after a form submit
+1. Programmatically associating the correct label `for` attribute with the `id` of the input
+2. Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
+3. An `aria-live` region that can notify screen readers about changes in the control error state
+4. Adds the label to a general form summary for screen readers when the control is in an error state after a form submit

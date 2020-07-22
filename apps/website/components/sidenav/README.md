@@ -16,8 +16,6 @@ toc: true
     </div>
 </div>
 
-# Sidenav
-
 The sidenav is a left-aligned navigational component.
 
 ## Usage
@@ -42,7 +40,7 @@ Clarity [application layout](/foundation/app-layout/) depends on a specific DOM 
 
 ### Navigation Groups
 
-Naviagation groups provide a way to group similar or related links together. When grouping links, do not make the heading a link.
+Navigation groups provide a way to group similar or related links together. When grouping links, do not make the heading a link.
 
 <doc-demo src="/demos/sidenav/nav-groups-ng.html" demo="/demos/sidenav/nav-groups-css.html" />
 

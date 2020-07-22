@@ -3,7 +3,7 @@ title: Overview
 toc: true
 ---
 
-A table displays information in a grid of rows and columns providing a method of organizining information in way that facilitates comparisons to discover patterns and insights.
+A table displays information in a grid of rows and columns providing a method of organizing information in way that facilitates comparisons to discover patterns and insights.
 
 ## Usage
 

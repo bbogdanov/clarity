@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 The datalist element offers a flexible input when users need to filter and select from a large list of pre-defined options. Or, they need to input a custom value (not provided in the pre-defined list) for the input.
@@ -28,7 +29,7 @@ Autocomplete is a familiar pattern for users of web technology. Searching, item 
 
 The HTML `datalist` element contains a list of pre-defined `option` elements that can be chosen for an input control value. Or, the user can type a different value into the input.
 
-Natively, the `id` for a datailist provides the link to an input via the value given for the input's `list` attribute. Clarity handles this association by default; it generates and associates the datalist id with its corresponding input element via the `list` attribute on the input. The app markes the input for a datalist by using the `clrDatalistInput` directive on the input and default, unique values are generated for the component. If there is an application side need to declare s custom id for the datalist, this value will be used instead of the generated id.
+Natively, the `id` for a datailist provides the link to an input via the value given for the input's `list` attribute. Clarity handles this association by default; it generates and associates the datalist id with its corresponding input element via the `list` attribute on the input. The app marks the input for a datalist by using the `clrDatalistInput` directive on the input and default, unique values are generated for the component. If there is an application side need to declare s custom id for the datalist, this value will be used instead of the generated id.
 
 ### Basic Example
 
@@ -38,6 +39,6 @@ Natively, the `id` for a datailist provides the link to an input via the value g
 
 Datalists in template driven forms implement the same validation attributes that is described by native HTML form validation. Datalists in reactive forms allow apps to utilize the built in Angular validators (e.g `required` or `minlength`) or, they can add custom validator functions directly to the form control model in the component class.
 
-As with other Clarity form controls, the datalist and its associated input belong inside a container. In this case it is named `clr-datalist-container`. Besides the required input with the `clrDatalistInput` directive and the datalist element this container tkaes three other optional elements. An optional element, `clr-control-helper` and the `clr-control-error` elements if there is validation for it.
+As with other Clarity form controls, the datalist and its associated input belong inside a container. In this case it is named `clr-datalist-container`. Besides the required input with the `clrDatalistInput` directive and the datalist element this container takes three other optional elements. An optional element, `clr-control-helper` and the `clr-control-error` elements if there is validation for it.
 
 <doc-demo src="/demos/datalist/validation-ng.html" demo="/demos/datalist/validation-css.html" />

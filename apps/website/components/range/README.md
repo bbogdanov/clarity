@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 The HTML5 range input element is used when a user can choose between a min and a max value but the precise value chosen is not considered important.

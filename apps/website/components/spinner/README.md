@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 # Spinner
@@ -77,7 +78,7 @@ Medium spinners have 1.5rem (36px) width and height. Use them to track progress 
 
 #### Small
 
-Small spinners have 0.75rem (18px) width and height. Use them in constrained spaces like an input field or next to a button. While the spinner is animating and active the input field or buton should be disabled until the action is complete.
+Small spinners have 0.75rem (18px) width and height. Use them in constrained spaces like an input field or next to a button. While the spinner is animating and active the input field or button should be disabled until the action is complete.
 <doc-demo src="/demos/spinner/small-ng.html" demo="/demos/spinner/small-css.html" toggle="false" />
 
 ## Label

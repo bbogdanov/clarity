@@ -34,7 +34,7 @@ Horizontal lines in the stack editor are for readability–they help users quick
 
 #### Enabling Value Editing
 
-Stackview has an Edit button on the top right, which on click opens an editable stack view in a modal. This design prevents users from accidentally altering a value in the main content area. Common editing controls include input fields, select boxes, checkboxes, and radio buttons.
+StackView has an Edit button on the top right, which on click opens an editable stack view in a modal. This design prevents users from accidentally altering a value in the main content area. Common editing controls include input fields, select boxes, checkboxes, and radio buttons.
 
 #### Placement
 

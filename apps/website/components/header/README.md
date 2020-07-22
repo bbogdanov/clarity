@@ -1,41 +1,9 @@
 ---
 title: Overview
+toc: true
 ---
 
 Headers provide branding, navigation, search, and access to global application actions such as settings and notifications.
-
-::: inset
-
-<header class="header-6" style="min-width: 100%; flex: none">
-  <div class="branding">
-      <a class="logo-and-title">
-          <clr-icon shape="file"></clr-icon>
-          <span class="title">Note App</span>
-      </a>
-  </div>
-  <div class="header-nav">
-      <a href="javascript://" class="nav-link">
-          <span class="nav-text">Notes</span>
-      </a>
-      <a href="javascript://" class="active nav-link">
-          <span class="nav-text">Shared Notes</span>
-      </a>
-  </div>
-  <div class="header-actions">
-    <div class="dropdown">
-      <button class="nav-icon dropdown-toggle" aria-label="toggle settings menu">
-        <clr-icon shape="cog"></clr-icon>
-        <clr-icon shape="caret" direction="down"></clr-icon>
-      </button>
-      <div class="dropdown-menu">
-        <a href="javascript://">About</a>
-        <a href="javascript://">Preferences</a>
-        <a href="javascript://">Log out</a>
-      </div>
-    </div>
-  </div>
-</header>
-:::
 
 ## Usage
 
@@ -88,7 +56,7 @@ If you’re using icons on their own in the header, using tooltips will help use
 
 :::
 
-::: dont Use icons alone or mix icons and text for top level navigation items.
+::: don't Use icons alone or mix icons and text for top level navigation items.
 
 <header class="header-6" style="min-width: 100%; flex: none">
   <div class="branding">

@@ -3,8 +3,6 @@ title: Overview
 toc: true
 ---
 
-# Accordion
-
 An accordion is a collection of vertically stacked sections with multiple content areas which may be expanded or minimized by the user to reveal their content.
 
 ## Usage
@@ -35,11 +33,84 @@ Keep text as brief as possible especially in header sections which should convey
 
 ## Code & Examples
 
-Accordions by default only allow one panel to be open at a time. To enable multiple panels set `clrAccordionMultiPanel="true"` on the [clr-accordion component]().
+Accordions by default only allow one panel to be open at a time. To enable multiple panels set `clrAccordionMultiPanel="true"` on the `clr-accordion` component.
 
-Leverage our optional \*clrIfExpanded structural directive on the clr-accordion-panel to only instantiate children when they are displayed.
+Leverage our optional `*clrIfExpanded` structural directive on the `clr-accordion-panel` to only instantiate children when they are displayed.
 
-### Basic Accordion
+### Examples
 
-![Basic Accordion](/images/components/accordion/basic-accordion.gif)
-<doc-demo src="/demos/accordion/basic.html" />
+### Basic
+
+A basic accordion is made up of a set of panels, each with a title and content.
+
+```html
+<<< ../angular/src/stories/accordion/basic.html
+```
+
+#### Bindings
+
+The Accordion has several bindings for setting options and listening for events.
+
+```html
+<<< ../angular/src/stories/accordion/bindings.html
+```
+
+#### Conditional rendering
+
+Using the optional `*clrIfExpanded` structural directive, you can conditionally render the content only when the panel is opened. This is useful when you have a lot of content inside of the panels that could be slowing down the browser. Be aware that it also removes the content from the DOM when the panel closes, which could have side effects if your content has state.
+
+```html
+<<< ../angular/src/stories/accordion/with-if-expanded.html
+```
+
+### API
+
+#### `ClrAccordion` Component
+
+```html
+<clr-accordion [clrAccordionMultiPanel]="multi"></clr-accordion>
+```
+
+#### Inputs multiple
+
+- `clrAccordionMultiPanel: boolean` - Allows multiple panels to be open at the same time. Default: `false`.
+
+#### `ClrAccordionPanel` Component
+
+```html
+<clr-accordion-panel [clrAccordionPanelDisabled]="false" [(clrAccordionPanelOpen)]="panelState"> </clr-accordion-panel>
+```
+
+#### Inputs disable
+
+- `clrAccordionPanelDisabled: boolean` - Disable the panel from changing its open state, will be locked opened or closed. Default: `false`.
+
+#### Two-way Bindings
+
+- `clrAccordionPanelOpen: boolean` - Change the open state of the panel. Default: `false`.
+
+#### `ClrIfExpanded` Directive
+
+```html
+<clr-accordion-panel *clrIfExpanded></clr-accordion-panel>
+```
+
+#### Inputs
+
+- `clrIfExpanded: boolean` - Allows setting the open state of the panel, and will create on open and destroy the contents on close. Default: `false`.
+
+## Accessibility
+
+All of the WCAG guidelines apply for the Accordion component. The Accordion component implements all of the necessary accessibility requirements internally for itself.
+
+Applications are responsible for any content inside of the Accordion that may be subject to additional accessibility requirements.
+
+### General guidelines
+
+The following general guidelines apply to the design and development of the Accordion.
+
+- Generic
+- Content specific
+- Form
+- Interactive
+- Container
