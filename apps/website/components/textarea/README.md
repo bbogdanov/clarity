@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 Textareas are a popular form control for long form text input, and Clarity supports both a CSS only and Angular component. You may wish to review the general forms documentation about form controls.

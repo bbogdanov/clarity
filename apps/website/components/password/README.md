@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 Password fields are a specialized input field with the ability to toggle between the masked field or to view the password in plain text.

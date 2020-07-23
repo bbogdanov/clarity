@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 Lists are for showing a set of items in sequence, and can be nested to show some hierarchy.

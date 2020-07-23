@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 
 With a select box, users can select one item from a list of values. The selected item is visible when the select box is closed.
