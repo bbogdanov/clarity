@@ -76,7 +76,12 @@
     "react:build": "yarn --cwd packages/react run build",
     "react:lint": "yarn --cwd packages/react run lint",
     "react:test": "yarn --cwd packages/react run test",
-    "preinstall": "mkdir -p ./packages/core/dist/core/ && mkdir -p ./packages/react/dist/react/"
+    "preinstall": "mkdir -p ./packages/core/dist/core/ && mkdir -p ./packages/react/dist/react/",
+    "website:build": "yarn --cwd apps/website build; yarn --cwd packages/angular run build-storybook; yarn --cwd packages/core dev:build",
+    "website:deploy": "scripts/website.sh",
+    "website:storybook": "yarn --cwd packages/angular run start:storybook",
+    "website:preview": "lite-server --baseDir=dist/website",
+    "website:start": "yarn --cwd apps/website start"
   },
   "devDependencies": {
     "@commitlint/cli": "8.0.0",
