@@ -11,6 +11,7 @@
     "build": "vuepress build"
   },
   "dependencies": {
+    "@clr/core": "./packages/core/dist/core",
     "@sentry/browser": "5.15.5",
     "@sentry/integrations": "5.15.5",
     "markdown-it-attrs": "^3.0.2",
