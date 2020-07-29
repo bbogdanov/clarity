@@ -2607,8 +2607,35 @@
   resolved "https://registry.yarnpkg.com/@clr/city/-/city-1.1.0.tgz#4a444cd12c626d66ffadab27e9d09bb3c8eca352"
   integrity sha512-R+C4uywmXoTD01LINOt3O0cBRviQdbAVNxdVvOyuO3+rM9bvFroF7UZY0R1ue/xvKXlqJrEkNKZQODeKjzaAhA==
 
+"@clr/core@./dist/core":
+  version "4.0.0-rc.1"
+  dependencies:
+    css-vars-ponyfill "^2.3.2"
+    lit-element "^2.3.1"
+    lit-html "^1.2.1"
+    ramda "^0.27.0"
+    tslib "^2.0.0"
+  optionalDependencies:
+    "@clr/city" "^1.1.0"
+    "@webcomponents/custom-elements" "^1.4.2"
+    "@webcomponents/shadycss" "^1.10.1"
+    "@webcomponents/webcomponentsjs" "^2.4.4"
+    normalize.css "^8.0.1"
+
 "@clr/core@./packages/core/dist/core":
-  version "0.0.0"
+  version "4.0.0-rc.1"
+  dependencies:
+    css-vars-ponyfill "^2.3.2"
+    lit-element "^2.3.1"
+    lit-html "^1.2.1"
+    ramda "^0.27.0"
+    tslib "^2.0.0"
+  optionalDependencies:
+    "@clr/city" "^1.1.0"
+    "@webcomponents/custom-elements" "^1.4.2"
+    "@webcomponents/shadycss" "^1.10.1"
+    "@webcomponents/webcomponentsjs" "^2.4.4"
+    normalize.css "^8.0.1"
 
 "@clr/react@./packages/react/dist/react":
   version "0.0.0"
