@@ -57,7 +57,7 @@
                 <img cds-layout="container:fill" src="/images/home/img-design-dev.svg" aria-hidden="true" />
               </div>
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="heading" cds-layout="p-b:lg">Design, Development and Deploy</h4>
+                <h4 cds-text="heading" cds-layout="p-b:lg">Design, Develop and Deploy</h4>
                 <p class="section-block" cds-text="message">
                   Our design guidelines, component library, and front end assets are built by working directly within
                   product teams. Use Clarity to enable your developers and designers to deliver the best experience
