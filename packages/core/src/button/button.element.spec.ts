@@ -260,8 +260,8 @@ describe('button element', () => {
       await componentIsStable(componentLink);
       await componentIsStable(componentButton);
       const borderWidth = 2; // 1px on each side
-      expect(componentLink.querySelector('a').getBoundingClientRect().width).toBe(
-        componentButton.getBoundingClientRect().width - borderWidth
+      expect(Math.round(componentLink.querySelector('a').getBoundingClientRect().width)).toBe(
+        Math.round(componentButton.getBoundingClientRect().width - borderWidth)
       );
     });
   });
